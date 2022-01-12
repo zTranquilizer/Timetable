@@ -22,7 +22,7 @@
                 date = value.Date;
             } 
         }
-        public TimeSpan Time { get; set; }
+        public DateTime Time { get; set; }
 
         public Teacher Teacher { get; set; }
         public Group Group { get; set; }
