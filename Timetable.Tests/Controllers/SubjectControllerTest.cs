@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Timetable.Controllers;
 using Timetable.Infrastructure.Models.Database;
-using Timetable.Infrastructure.ServiceModels.Subject;
+using Timetable.Infrastructure.Models.Service.Subject;
 using Timetable.Infrastructure.Services.Interfaces;
 using Xunit;
 
