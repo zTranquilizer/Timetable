@@ -1,15 +1,14 @@
 ﻿using Timetable.Infrastructure.Enums;
-using Timetable.Infrastructure.Models;
+using Timetable.Infrastructure.Models.Database;
 
-namespace Timetable.Infrastructure.ServiceModels.Subject
+namespace Timetable.Infrastructure.Models.Service.Subject
 {
     /// <summary>
-    ///     Edit subject response model
+    ///     Create subject response model
     /// </summary>
-    public class EditSubjectResponseModel
+    public class CreateSubjectResponseModel
     {
         public SubjectResponseType Type { get; set; }
         public SubjectDto Subject { get; set; }
-
     }
 }

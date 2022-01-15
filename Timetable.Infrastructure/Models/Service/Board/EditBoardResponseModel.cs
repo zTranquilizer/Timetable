@@ -1,7 +1,7 @@
 ﻿using Timetable.Infrastructure.Enums;
-using Timetable.Infrastructure.Models;
+using Timetable.Infrastructure.Models.Database;
 
-namespace Timetable.Infrastructure.ServiceModels.Board
+namespace Timetable.Infrastructure.Models.Service.Board
 {
     /// <summary>
     ///     Edit board response model

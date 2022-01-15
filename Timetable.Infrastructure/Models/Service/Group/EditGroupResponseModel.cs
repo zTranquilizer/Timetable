@@ -1,7 +1,7 @@
 ﻿using Timetable.Infrastructure.Enums;
-using Timetable.Infrastructure.Models;
+using Timetable.Infrastructure.Models.Database;
 
-namespace Timetable.Infrastructure.ServiceModels.Group
+namespace Timetable.Infrastructure.Models.Service.Group
 {
     /// <summary>
     ///     Edit group response model

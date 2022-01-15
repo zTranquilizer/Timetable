@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Timetable.Infrastructure.Models
+﻿namespace Timetable.Infrastructure.Models.Database
 {
     /// <summary>
     ///     Board dto

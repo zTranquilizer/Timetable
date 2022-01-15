@@ -1,7 +1,7 @@
 ﻿using Timetable.Infrastructure.Enums;
-using Timetable.Infrastructure.Models;
+using Timetable.Infrastructure.Models.Database;
 
-namespace Timetable.Infrastructure.ServiceModels.Teacher
+namespace Timetable.Infrastructure.Models.Service.Teacher
 {
     /// <summary>
     ///     Create teacher response model

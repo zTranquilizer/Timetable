@@ -1,4 +1,4 @@
-﻿namespace Timetable.Infrastructure.Models
+﻿namespace Timetable.Infrastructure.Models.Database
 {
     /// <summary>
     ///     Group dto
