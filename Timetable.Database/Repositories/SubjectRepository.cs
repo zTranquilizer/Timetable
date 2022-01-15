@@ -46,7 +46,7 @@ namespace Timetable.Database.Repositories
         }
 
         /// <summary>
-        ///  Create subject async
+        ///     Create subject async
         /// </summary>
         /// <param name="subject"></param>
         /// <returns></returns>
@@ -59,7 +59,7 @@ namespace Timetable.Database.Repositories
         }
 
         /// <summary>
-        ///  Edit subject async
+        ///     Edit subject async
         /// </summary>
         /// <param name="subject"></param>
         /// <returns></returns>
@@ -72,7 +72,7 @@ namespace Timetable.Database.Repositories
         }
 
         /// <summary>
-        ///  Delete subject async
+        ///     Delete subject async
         /// </summary>
         /// <param name="subject"></param>
         /// <returns></returns>

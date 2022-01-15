@@ -46,7 +46,7 @@ namespace Timetable.Database.Repositories
         }
 
         /// <summary>
-        ///  Create group async
+        ///     Create group async
         /// </summary>
         /// <param name="group"></param>
         /// <returns></returns>
@@ -59,7 +59,7 @@ namespace Timetable.Database.Repositories
         }
 
         /// <summary>
-        ///  Edit group async
+        ///     Edit group async
         /// </summary>
         /// <param name="group"></param>
         /// <returns></returns>
@@ -72,7 +72,7 @@ namespace Timetable.Database.Repositories
         }
 
         /// <summary>
-        ///  Delete group async
+        ///     Delete group async
         /// </summary>
         /// <param name="group"></param>
         /// <returns></returns>

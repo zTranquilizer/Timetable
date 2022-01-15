@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Database\Timetable.Database.csproj" />
+    <ProjectReference Include="..\Timetable.Database\Timetable.Database.csproj" />
   </ItemGroup>
 
 </Project>

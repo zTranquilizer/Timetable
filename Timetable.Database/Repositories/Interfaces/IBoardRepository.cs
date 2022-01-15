@@ -42,21 +42,21 @@ namespace Timetable.Database.Repositories.Interfaces
         Task<Board> GetBoardBySubjectIdAsync(int id);
 
         /// <summary>
-        ///  Create board async
+        ///     Create board async
         /// </summary>
         /// <param name="board"></param>
         /// <returns></returns>
         Task<Board> CreateBoardAsync(Board board);
 
         /// <summary>
-        ///  Edit board async
+        ///     Edit board async
         /// </summary>
         /// <param name="board"></param>
         /// <returns></returns>
         Task<Board> EditBoardAsync(Board board);
 
         /// <summary>
-        ///  Delete board async
+        ///     Delete board async
         /// </summary>
         /// <param name="board"></param>
         /// <returns></returns>

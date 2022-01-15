@@ -28,21 +28,21 @@ namespace Timetable.Database.Repositories.Interfaces
         Task<Group> GetGroupByNumberAsync(int number);
 
         /// <summary>
-        ///  Create group async
+        ///     Create group async
         /// </summary>
         /// <param name="group"></param>
         /// <returns></returns>
         Task<Group> CreateGroupAsync(Group group);
 
         /// <summary>
-        ///  Edit group async
+        ///     Edit group async
         /// </summary>
         /// <param name="group"></param>
         /// <returns></returns>
         Task<Group> EditGroupAsync(Group group);
 
         /// <summary>
-        ///  Delete group async
+        ///     Delete group async
         /// </summary>
         /// <param name="group"></param>
         /// <returns></returns>

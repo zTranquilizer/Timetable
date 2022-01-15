@@ -66,7 +66,7 @@ namespace Timetable.Database.Repositories
         }
 
         /// <summary>
-        ///  Create board async
+        ///     Create board async
         /// </summary>
         /// <param name="board"></param>
         /// <returns></returns>
@@ -79,7 +79,7 @@ namespace Timetable.Database.Repositories
         }
 
         /// <summary>
-        ///  Edit board async
+        ///     Edit board async
         /// </summary>
         /// <param name="board"></param>
         /// <returns></returns>
@@ -92,7 +92,7 @@ namespace Timetable.Database.Repositories
         }
 
         /// <summary>
-        ///  Delete board async
+        ///     Delete board async
         /// </summary>
         /// <param name="board"></param>
         /// <returns></returns>

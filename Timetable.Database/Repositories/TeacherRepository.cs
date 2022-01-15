@@ -36,7 +36,7 @@ namespace Timetable.Database.Repositories
         }
 
         /// <summary>
-        ///  Create teacher async
+        ///     Create teacher async
         /// </summary>
         /// <param name="teacher"></param>
         /// <returns></returns>
@@ -49,7 +49,7 @@ namespace Timetable.Database.Repositories
         }
 
         /// <summary>
-        ///  Edit teacher async
+        ///     Edit teacher async
         /// </summary>
         /// <param name="teacher"></param>
         /// <returns></returns>
@@ -62,7 +62,7 @@ namespace Timetable.Database.Repositories
         }
 
         /// <summary>
-        ///  Delete teacher async
+        ///     Delete teacher async
         /// </summary>
         /// <param name="teacher"></param>
         /// <returns></returns>

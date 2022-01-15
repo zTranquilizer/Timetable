@@ -28,21 +28,21 @@ namespace Timetable.Database.Repositories.Interfaces
         Task<Subject> GetSubjectByNameAsync(string name);
 
         /// <summary>
-        ///  Create subject async
+        ///     Create subject async
         /// </summary>
         /// <param name="subject"></param>
         /// <returns></returns>
         Task<Subject> CreateSubjectAsync(Subject subject);
 
         /// <summary>
-        ///  Edit subject async
+        ///     Edit subject async
         /// </summary>
         /// <param name="subject"></param>
         /// <returns></returns>
         Task<Subject> EditSubjectAsync(Subject subject);
 
         /// <summary>
-        ///  Delete subject async
+        ///     Delete subject async
         /// </summary>
         /// <param name="subject"></param>
         /// <returns></returns>

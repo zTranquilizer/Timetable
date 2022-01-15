@@ -21,21 +21,21 @@ namespace Timetable.Database.Repositories.Interfaces
         Task<Teacher> GetTeacherByIdAsync(int id);
 
         /// <summary>
-        ///  Create teacher async
+        ///     Create teacher async
         /// </summary>
         /// <param name="teacher"></param>
         /// <returns></returns>
         Task<Teacher> CreateTeacherAsync(Teacher teacher);
 
         /// <summary>
-        ///  Edit teacher async
+        ///     Edit teacher async
         /// </summary>
         /// <param name="teacher"></param>
         /// <returns></returns>
         Task<Teacher> EditTeacherAsync(Teacher teacher);
 
         /// <summary>
-        ///  Delete teacher async
+        ///     Delete teacher async
         /// </summary>
         /// <param name="teacher"></param>
         /// <returns></returns>

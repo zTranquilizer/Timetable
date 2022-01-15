@@ -11,7 +11,10 @@ namespace Timetable.Database
         public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
         {
             // Auto migrate database
-            Database.Migrate();
+            if (!Database.IsInMemory())
+            {
+                Database.Migrate();
+            }
 
             // Disable tracking entries
             ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
