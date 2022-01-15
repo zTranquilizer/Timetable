@@ -2,8 +2,8 @@
 using Timetable.Database.Models;
 using Timetable.Database.Repositories.Interfaces;
 using Timetable.Infrastructure.Enums;
-using Timetable.Infrastructure.Models;
-using Timetable.Infrastructure.ServiceModels.Subject;
+using Timetable.Infrastructure.Models.Database;
+using Timetable.Infrastructure.Models.Service.Subject;
 using Timetable.Infrastructure.Services.Interfaces;
 
 namespace Timetable.Infrastructure.Services
@@ -55,7 +55,7 @@ namespace Timetable.Infrastructure.Services
         }
 
         /// <summary>
-        ///  Create subject async
+        ///     Create subject async
         /// </summary>
         /// <param name="subjectDto"></param>
         /// <returns></returns>
@@ -72,7 +72,7 @@ namespace Timetable.Infrastructure.Services
         }
 
         /// <summary>
-        ///  Edit subject async
+        ///     Edit subject async
         /// </summary>
         /// <param name="id"></param>
         /// <param name="subjectDto"></param>
@@ -99,11 +99,10 @@ namespace Timetable.Infrastructure.Services
                 Type = SubjectResponseType.Success,
                 Subject = subjectEdited.Adapt<SubjectDto>()
             };
-
         }
 
         /// <summary>
-        ///  Delete subject async
+        ///     Delete subject async
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>

@@ -1,7 +1,7 @@
 ﻿using Timetable.Database.Models;
 using Timetable.Infrastructure.Enums;
-using Timetable.Infrastructure.Models;
-using Timetable.Infrastructure.ServiceModels.Group;
+using Timetable.Infrastructure.Models.Database;
+using Timetable.Infrastructure.Models.Service.Group;
 
 namespace Timetable.Infrastructure.Services.Interfaces
 {
@@ -31,14 +31,14 @@ namespace Timetable.Infrastructure.Services.Interfaces
         Task<GroupDto> GetGroupByNumberAsync(int id);
 
         /// <summary>
-        ///  Create group async
+        ///     Create group async
         /// </summary>
         /// <param name="groupDto"></param>
         /// <returns></returns>
         Task<CreateGroupResponseModel> CreateGroupAsync(GroupDto groupDto);
 
         /// <summary>
-        ///  Edit group async
+        ///     Edit group async
         /// </summary>
         /// <param name="id"></param>
         /// <param name="groupDto"></param>
@@ -46,7 +46,7 @@ namespace Timetable.Infrastructure.Services.Interfaces
         Task<EditGroupResponseModel> EditGroupAsync(int id, GroupDto groupDto);
 
         /// <summary>
-        ///  Delete group async
+        ///     Delete group async
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>

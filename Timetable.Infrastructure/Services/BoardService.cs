@@ -2,8 +2,8 @@
 using Timetable.Database.Models;
 using Timetable.Database.Repositories.Interfaces;
 using Timetable.Infrastructure.Enums;
-using Timetable.Infrastructure.Models;
-using Timetable.Infrastructure.ServiceModels.Board;
+using Timetable.Infrastructure.Models.Database;
+using Timetable.Infrastructure.Models.Service.Board;
 using Timetable.Infrastructure.Services.Interfaces;
 
 namespace Timetable.Infrastructure.Services
@@ -49,7 +49,7 @@ namespace Timetable.Infrastructure.Services
         }
 
         /// <summary>
-        ///  Create board async
+        ///     Create board async
         /// </summary>
         /// <param name="boardDto"></param>
         /// <returns></returns>
@@ -115,7 +115,7 @@ namespace Timetable.Infrastructure.Services
         }
 
         /// <summary>
-        ///  Edit board async
+        ///     Edit board async
         /// </summary>
         /// <param name="id"></param>
         /// <param name="boardDto"></param>
@@ -176,7 +176,7 @@ namespace Timetable.Infrastructure.Services
         }
 
         /// <summary>
-        ///  Delete board async
+        ///     Delete board async
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>

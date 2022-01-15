@@ -1,9 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Timetable.Database.Models;
 using Timetable.Infrastructure.Enums;
-using Timetable.Infrastructure.Models;
-using Timetable.Infrastructure.ServiceModels.Board;
-using Timetable.Infrastructure.ServiceModels.Group;
+using Timetable.Infrastructure.Models.Database;
+using Timetable.Infrastructure.Models.Service.Board;
 using Timetable.Infrastructure.Services.Interfaces;
 
 namespace Timetable.Controllers
@@ -13,7 +11,7 @@ namespace Timetable.Controllers
     public class BoardController : ControllerBase
     {
         private readonly IBoardService _boardService;
-
+        
         public BoardController(IBoardService boardService)
         {
             _boardService = boardService;

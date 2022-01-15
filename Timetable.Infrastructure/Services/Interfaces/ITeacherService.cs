@@ -1,7 +1,7 @@
 ﻿using Timetable.Database.Models;
 using Timetable.Infrastructure.Enums;
-using Timetable.Infrastructure.Models;
-using Timetable.Infrastructure.ServiceModels.Teacher;
+using Timetable.Infrastructure.Models.Database;
+using Timetable.Infrastructure.Models.Service.Teacher;
 
 namespace Timetable.Infrastructure.Services.Interfaces
 {
@@ -24,14 +24,14 @@ namespace Timetable.Infrastructure.Services.Interfaces
         Task<TeacherDto> GetTeacherByIdAsync(int id);
 
         /// <summary>
-        ///  Create teacher async
+        ///     Create teacher async
         /// </summary>
         /// <param name="teacherDto"></param>
         /// <returns></returns>
         Task<CreateTeacherResponseModel> CreateTeacherAsync(TeacherDto teacherDto);
 
         /// <summary>
-        ///  Edit teacher async
+        ///     Edit teacher async
         /// </summary>
         /// <param name="id"></param>
         /// <param name="teacherDto"></param>
@@ -39,7 +39,7 @@ namespace Timetable.Infrastructure.Services.Interfaces
         Task<EditTeacherResponseModel> EditTeacherAsync(int id, TeacherDto teacherDto);
 
         /// <summary>
-        ///  Delete teacher async
+        ///     Delete teacher async
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>

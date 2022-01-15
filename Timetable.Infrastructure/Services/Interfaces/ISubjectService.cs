@@ -1,7 +1,7 @@
 ﻿using Timetable.Database.Models;
 using Timetable.Infrastructure.Enums;
-using Timetable.Infrastructure.Models;
-using Timetable.Infrastructure.ServiceModels.Subject;
+using Timetable.Infrastructure.Models.Database;
+using Timetable.Infrastructure.Models.Service.Subject;
 
 namespace Timetable.Infrastructure.Services.Interfaces
 {
@@ -31,14 +31,14 @@ namespace Timetable.Infrastructure.Services.Interfaces
         Task<SubjectDto> GetSubjectByNameAsync(string name);
 
         /// <summary>
-        ///  Create subject async
+        ///     Create subject async
         /// </summary>
         /// <param name="subjectDto"></param>
         /// <returns></returns>
         Task<CreateSubjectResponseModel> CreateSubjectAsync(SubjectDto subjectDto);
 
         /// <summary>
-        ///  Edit subject async
+        ///     Edit subject async
         /// </summary>
         /// <param name="id"></param>
         /// <param name="subjectDto"></param>
@@ -46,7 +46,7 @@ namespace Timetable.Infrastructure.Services.Interfaces
         Task<EditSubjectResponseModel> EditSubjectAsync(int id, SubjectDto subjectDto);
 
         /// <summary>
-        ///  Delete subject async
+        ///     Delete subject async
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Timetable.Infrastructure.Enums;
-using Timetable.Infrastructure.Models;
-using Timetable.Infrastructure.ServiceModels.Teacher;
+using Timetable.Infrastructure.Models.Database;
+using Timetable.Infrastructure.Models.Service.Teacher;
 using Timetable.Infrastructure.Services.Interfaces;
 
 namespace Timetable.Controllers

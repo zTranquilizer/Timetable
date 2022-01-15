@@ -2,8 +2,8 @@
 using Timetable.Database.Models;
 using Timetable.Database.Repositories.Interfaces;
 using Timetable.Infrastructure.Enums;
-using Timetable.Infrastructure.Models;
-using Timetable.Infrastructure.ServiceModels.Group;
+using Timetable.Infrastructure.Models.Database;
+using Timetable.Infrastructure.Models.Service.Group;
 using Timetable.Infrastructure.Services.Interfaces;
 
 namespace Timetable.Infrastructure.Services
@@ -55,7 +55,7 @@ namespace Timetable.Infrastructure.Services
         }
 
         /// <summary>
-        ///  Create group async
+        ///     Create group async
         /// </summary>
         /// <param name="groupDto"></param>
         /// <returns></returns>
@@ -72,7 +72,7 @@ namespace Timetable.Infrastructure.Services
         }
 
         /// <summary>
-        ///  Edit group async
+        ///     Edit group async
         /// </summary>
         /// <param name="id"></param>
         /// <param name="groupDto"></param>
@@ -103,7 +103,7 @@ namespace Timetable.Infrastructure.Services
         }
 
         /// <summary>
-        ///  Delete group async
+        ///     Delete group async
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>

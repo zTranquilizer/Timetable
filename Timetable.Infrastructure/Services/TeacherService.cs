@@ -2,8 +2,8 @@
 using Timetable.Database.Models;
 using Timetable.Database.Repositories.Interfaces;
 using Timetable.Infrastructure.Enums;
-using Timetable.Infrastructure.Models;
-using Timetable.Infrastructure.ServiceModels.Teacher;
+using Timetable.Infrastructure.Models.Database;
+using Timetable.Infrastructure.Models.Service.Teacher;
 using Timetable.Infrastructure.Services.Interfaces;
 
 namespace Timetable.Infrastructure.Services
@@ -44,7 +44,7 @@ namespace Timetable.Infrastructure.Services
         }
 
         /// <summary>
-        ///  Create teacher async
+        ///     Create teacher async
         /// </summary>
         /// <param name="teacherDto"></param>
         /// <returns></returns>
@@ -61,7 +61,7 @@ namespace Timetable.Infrastructure.Services
         }
 
         /// <summary>
-        ///  Edit teacher async
+        ///     Edit teacher async
         /// </summary>
         /// <param name="id"></param>
         /// <param name="teacherDto"></param>
@@ -92,7 +92,7 @@ namespace Timetable.Infrastructure.Services
         }
 
         /// <summary>
-        ///  Delete teacher async
+        ///     Delete teacher async
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>

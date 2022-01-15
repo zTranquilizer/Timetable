@@ -1,7 +1,7 @@
 ﻿using Timetable.Database.Models;
 using Timetable.Infrastructure.Enums;
-using Timetable.Infrastructure.Models;
-using Timetable.Infrastructure.ServiceModels.Board;
+using Timetable.Infrastructure.Models.Database;
+using Timetable.Infrastructure.Models.Service.Board;
 
 namespace Timetable.Infrastructure.Services.Interfaces
 {
@@ -24,14 +24,14 @@ namespace Timetable.Infrastructure.Services.Interfaces
         Task<BoardDto> GetBoardByIdAsync(int id);
 
         /// <summary>
-        ///  Create board async
+        ///     Create board async
         /// </summary>
         /// <param name="boardDto"></param>
         /// <returns></returns>
         Task<CreateBoardResponseModel> CreateBoardAsync(BoardDto boardDto);
 
         /// <summary>
-        ///  Edit board async
+        ///     Edit board async
         /// </summary>
         /// <param name="id"></param>
         /// <param name="boardDto"></param>
@@ -39,7 +39,7 @@ namespace Timetable.Infrastructure.Services.Interfaces
         Task<EditBoardResponseModel> EditBoardAsync(int id, BoardDto boardDto);
 
         /// <summary>
-        ///  Delete board async
+        ///     Delete board async
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
