@@ -107,7 +107,9 @@ namespace Timetable.Tests.Services
                     Id = 1,
                     SubjectName = "Geometry"
                 },
-                new SubjectDto{
+
+                new SubjectDto
+                {
                     Id = 2,
                     SubjectName = "Biography"
                 }

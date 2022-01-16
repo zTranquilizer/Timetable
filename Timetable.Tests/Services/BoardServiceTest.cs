@@ -111,7 +111,9 @@ namespace Timetable.Tests.Services
                     Day = DateTime.Now,
                     Time = DateTime.Now
                 },
-                new BoardDto{
+
+                new BoardDto
+                {
                     Id = 2,
                     GroupId = 1,
                     SubjectId = 1,

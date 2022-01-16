@@ -92,7 +92,9 @@ namespace Timetable.Tests.Controllers
                     Id = 1,
                     GroupNumber = 1111
                 },
-                new GroupDto{
+
+                new GroupDto
+                {
                     Id = 2,
                     GroupNumber = 1112
                 }

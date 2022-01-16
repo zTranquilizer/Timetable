@@ -94,7 +94,9 @@ namespace Timetable.Tests.Controllers
                     FirstName = "Jora",
                     LastName = "Coreto",
                 },
-                new TeacherDto{
+
+                new TeacherDto
+                {
                     Id = 2,
                     FirstName = "Mikkle",
                     LastName = "Poiskov",

@@ -92,7 +92,9 @@ namespace Timetable.Tests.Controllers
                     Id = 1,
                     SubjectName = "Biography"
                 },
-                new SubjectDto{
+
+                new SubjectDto
+                {
                     Id = 2,
                     SubjectName = "History"
                 }

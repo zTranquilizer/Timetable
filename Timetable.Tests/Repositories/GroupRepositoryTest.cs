@@ -131,17 +131,17 @@ namespace Timetable.Tests.Repositories
             var groupsNew = new[] {
 
                 new Group
-               {
-                Id = 1,
-                GroupNumber = 202011
-            },
-
-            new Group
                 {
-                Id = 2,
-                GroupNumber = 303011
-            }
-        };
+                    Id = 1,
+                    GroupNumber = 202011
+                },
+
+                new Group
+                {
+                    Id = 2,
+                    GroupNumber = 303011
+                }
+            };
 
             database.Groups.AddRange(groupsNew);
             database.SaveChanges();

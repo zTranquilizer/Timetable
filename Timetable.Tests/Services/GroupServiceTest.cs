@@ -107,7 +107,9 @@ namespace Timetable.Tests.Services
                     Id = 1,
                     GroupNumber = 202011
                 },
-                new GroupDto{
+
+                new GroupDto
+                {
                     Id = 2,
                     GroupNumber = 202022
                 }

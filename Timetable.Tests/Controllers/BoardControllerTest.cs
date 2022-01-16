@@ -96,7 +96,9 @@ namespace Timetable.Tests.Controllers
                     SubjectId = 1,
                     TeacherId = 1,
                 },
-                new BoardDto{
+
+                new BoardDto
+                {
                     Id = 2,
                     GroupId = 2,
                     SubjectId = 2,

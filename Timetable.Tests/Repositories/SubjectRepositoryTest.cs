@@ -132,17 +132,17 @@ namespace Timetable.Tests.Repositories
             var subjectsNew = new[] {
 
                 new Subject
-               {
-                Id = 1,
-                SubjectName = "Geometry"
-            },
-
-            new Subject
                 {
-                Id = 2,
-                SubjectName = "Geography"
-            }
-        };
+                    Id = 1,
+                    SubjectName = "Geometry"
+                },
+
+                new Subject
+                {
+                    Id = 2,
+                    SubjectName = "Geography"
+                }
+            };
 
             database.Subjects.AddRange(subjectsNew);
             database.SaveChanges();

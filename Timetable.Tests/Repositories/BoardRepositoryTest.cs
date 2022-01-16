@@ -118,25 +118,25 @@ namespace Timetable.Tests.Repositories
             var boardsNew = new[] {
 
                 new Board
-               {
-                Id = 1,
-                GroupId = 1,
-                TeacherId = 1,
-                SubjectId = 1,
-                Day = DateTime.Now,
-                Time = DateTime.Now
-            },
-
-            new Board
                 {
-                Id = 2,
-                GroupId = 1,
-                TeacherId = 1,
-                SubjectId = 1,
-                Day = DateTime.Now,
-                Time = DateTime.Now
-            }
-        };
+                    Id = 1,
+                    GroupId = 1,
+                    TeacherId = 1,
+                    SubjectId = 1,
+                    Day = DateTime.Now,
+                    Time = DateTime.Now
+                },
+
+                new Board
+                {
+                    Id = 2,
+                    GroupId = 1,
+                    TeacherId = 1,
+                    SubjectId = 1,
+                    Day = DateTime.Now,
+                    Time = DateTime.Now
+                }
+            };
 
             database.Boards.AddRange(boardsNew);
             database.SaveChanges();

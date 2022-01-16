@@ -92,7 +92,9 @@ namespace Timetable.Tests.Services
                     FirstName = "Jora",
                     LastName = "Coreto",
                 },
-                new TeacherDto{
+
+                new TeacherDto
+                {
                     Id = 2,
                     FirstName = "Mikkle",
                     LastName = "Poiskov",
