@@ -14,7 +14,6 @@ namespace Timetable.Tests.Repositories
     /// </summary>
     public class TeacherRepositoryTest
     {
-
         private readonly DbContextOptions<DatabaseContext>? options;
         private readonly DatabaseContext context;
 
@@ -78,7 +77,6 @@ namespace Timetable.Tests.Repositories
             //assert
             teacher.Should().BeEquivalentTo(result);
         }
-
 
         [Fact]
         public async Task EditTeacher_ShouldReturn_Teacher()

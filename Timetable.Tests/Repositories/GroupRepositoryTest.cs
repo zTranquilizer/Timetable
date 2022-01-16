@@ -14,7 +14,6 @@ namespace Timetable.Tests.Repositories
     /// </summary>
     public class GroupRepositoryTest
     {
-
         private readonly DbContextOptions<DatabaseContext>? options;
         private readonly DatabaseContext context;
 
@@ -76,7 +75,6 @@ namespace Timetable.Tests.Repositories
             Assert.Equal(groupsNew[0].GroupNumber, result.GroupNumber);
         }
 
-
         [Fact]
         public async Task AddGroup_ShouldReturn_Group()
         {
@@ -95,7 +93,6 @@ namespace Timetable.Tests.Repositories
             //assert
             group.Should().BeEquivalentTo(result);
         }
-
 
         [Fact]
         public async Task EditGroup_ShouldReturn_Group()

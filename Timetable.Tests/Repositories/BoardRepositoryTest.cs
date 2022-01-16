@@ -15,7 +15,6 @@ namespace Timetable.Tests.Repositories
     /// </summary>
     public class BoardRepositoryTest
     {
-
         private readonly DbContextOptions<DatabaseContext>? options;
         private readonly DatabaseContext context;
 
@@ -81,7 +80,6 @@ namespace Timetable.Tests.Repositories
             //assert
             board.Should().BeEquivalentTo(result);
         }
-
 
         [Fact]
         public async Task EditBoard_ShouldReturn_Board()

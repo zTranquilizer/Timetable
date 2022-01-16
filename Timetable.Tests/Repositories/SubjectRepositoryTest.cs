@@ -14,7 +14,6 @@ namespace Timetable.Tests.Repositories
     /// </summary>
     public class SubjectRepositoryTest
     {
-
         private readonly DbContextOptions<DatabaseContext>? options;
         private readonly DatabaseContext context;
 
@@ -77,7 +76,6 @@ namespace Timetable.Tests.Repositories
 
         }
 
-
         [Fact]
         public async Task AddSubject_ShouldReturn_Subject()
         {
@@ -97,7 +95,6 @@ namespace Timetable.Tests.Repositories
             subject.Should().BeEquivalentTo(result);
         }
 
-
         [Fact]
         public async Task EditSubject_ShouldReturn_Subject()
         {
@@ -113,7 +110,6 @@ namespace Timetable.Tests.Repositories
             //assert
             subjectsNew[0].Should().BeEquivalentTo(result);
         }
-
 
         [Fact]
         public async Task DeleteSubject_ShouldReturn_Subject()
