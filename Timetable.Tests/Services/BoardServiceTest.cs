@@ -1,5 +1,6 @@
 ﻿using FluentAssertions;
 using Mapster;
+using Microsoft.AspNetCore.Mvc;
 using Moq;
 using System;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ using System.Threading.Tasks;
 using Timetable.Database.Models;
 using Timetable.Database.Repositories.Interfaces;
 using Timetable.Infrastructure.Models.Database;
+using Timetable.Infrastructure.Models.Service.Board;
 using Timetable.Infrastructure.Services;
 using Xunit;
 
@@ -65,30 +67,36 @@ namespace Timetable.Tests.Services
         }
 
         [Fact]
-        //public async Task AddBoard_ShouldReturn_Board()
-        //{
-        //    //arrange
-        //    var groups = GetTestGroups();
-        //    BoardDto board = new BoardDto()
-        //    {
-        //        Id = 11,
-        //        GroupId = groups[0].Id,
-        //        SubjectId = 1,
-        //        TeacherId = 1,
-        //        Day = DateTime.Now,
-        //        Time = DateTime.Now
-        //    };
+        public async Task AddBoard_ShouldReturn_Board()
+        {
+            //arrange
+            var groups = GetTestGroups();
+            var subjects = GetTestSubjects();
+            var teachers = GetTestTeachers();
 
-        //    boardRepositoryMock.Setup(r => r.CreateBoardAsync(board.Adapt<Board>())).Returns(Task.FromResult(board.Adapt<Board>()));
+            BoardDto board = new BoardDto()
+            {
+                Id = 11,
+                GroupId = groups[0].Id,
+                SubjectId = subjects[0].Id,
+                TeacherId = teachers[0].Id,
+                Day = DateTime.Now,
+                Time = DateTime.Now
+            };
 
-        //    BoardService service = new BoardService(boardRepositoryMock.Object, groupRepositoryMock.Object, subjectRepositoryMock.Object, teacherRepositoryMock.Object);
+            boardRepositoryMock.Setup(r => r.CreateBoardAsync(board.Adapt<Board>())).Returns(Task.FromResult(board.Adapt<Board>()));
+            groupRepositoryMock.Setup(r => r.GetGroupByIdAsync(groups[0].Id)).Returns(Task.FromResult(groups[0].Adapt<Group>()));
+            subjectRepositoryMock.Setup(r => r.GetSubjectByIdAsync(subjects[0].Id)).Returns(Task.FromResult(subjects[0].Adapt<Subject>()));
+            teacherRepositoryMock.Setup(r => r.GetTeacherByIdAsync(teachers[0].Id)).Returns(Task.FromResult(teachers[0].Adapt<Teacher>()));
 
-        //    //act
-        //    CreateBoardResponseModel result = await service.CreateBoardAsync(board);
+            BoardService service = new BoardService(boardRepositoryMock.Object, groupRepositoryMock.Object, subjectRepositoryMock.Object, teacherRepositoryMock.Object);
 
-        //    //assert
-        //    Assert.True(result.Type == Infrastructure.Enums.BoardResponseType.Success);
-        //}
+            //act
+            CreateBoardResponseModel result = await service.CreateBoardAsync(board);
+
+            //assert
+            Assert.True(result.Type == Infrastructure.Enums.BoardResponseType.Success);
+        }
 
         private List<BoardDto> GetTestBoards()
         {
@@ -132,6 +140,44 @@ namespace Timetable.Tests.Services
             };
 
             return groups;
+        }
+
+        private List<SubjectDto> GetTestSubjects()
+        {
+            List<SubjectDto> subjects = new List<SubjectDto>
+            {
+                new SubjectDto
+                {
+                    Id = 1,
+                    SubjectName = "Math"
+                },
+                new SubjectDto{
+                    Id = 2,
+                    SubjectName = "History"
+                }
+            };
+
+            return subjects;
+        }
+
+        private List<TeacherDto> GetTestTeachers()
+        {
+            List<TeacherDto> teachers = new List<TeacherDto>
+            {
+                new TeacherDto
+                {
+                    Id = 1,
+                    FirstName = "Jora",
+                    LastName = "Coreto",
+                },
+                new TeacherDto{
+                    Id = 2,
+                    FirstName = "Mikkle",
+                    LastName = "Poiskov",
+                }
+            };
+
+            return teachers;
         }
     }
 }

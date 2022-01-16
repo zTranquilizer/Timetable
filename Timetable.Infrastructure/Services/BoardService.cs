@@ -89,7 +89,7 @@ namespace Timetable.Infrastructure.Services
 
             List<Board> boards = await _boardRepository.GetBoardsAsync();
 
-            if (boards.Any(x => x.Day == board.Day && x.Time == board.Time && x.TeacherId == teacher.Id))
+            if (boards != null && boards.Any(x => x.Day == board.Day && x.Time == board.Time && x.TeacherId == teacher.Id))
             {
                 return new CreateBoardResponseModel()
                 {
@@ -97,7 +97,7 @@ namespace Timetable.Infrastructure.Services
                 };
             }
 
-            if (boards.Any(x => x.Day == board.Day && x.Time == board.Time && x.GroupId == group.Id))
+            if (boards != null && boards.Any(x => x.Day == board.Day && x.Time == board.Time && x.GroupId == group.Id))
             {
                 return new CreateBoardResponseModel()
                 {
